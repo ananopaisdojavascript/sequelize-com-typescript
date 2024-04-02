@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {   
+    "target": "es2016", // Versão do JS para qual o arquivo .ts será compilado
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true, 
+    "module": "commonjs", // Usar os módulos do NodeJS
+    "rootDir": "./src", // Pasta de origem onde ficarão os arquivos .ts
+    "outDir": "./dist", // Pasta de saída onde ficarão os arquivos convertidos para .js
+    "esModuleInterop": true,
+    "moduleResolution": "node", // Usar os módulos do NodeJS
+    "strict": true // Declaração dos tipos dos dados
+  },
+  "exclude": ["node_modules"] // Ignora determinadas pastas ou arquivos
+}
