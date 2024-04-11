@@ -16,5 +16,5 @@ COPY . .
 # Expor uma porta do conteiner
 EXPOSE 8000
 
-# Comando para iniciarlizar o aplicativo
-CMD ["node" "./src/server.ts"]
+# Comando para inicializar o aplicativo
+CMD ["node" "./src/index.ts"]
