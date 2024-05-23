@@ -30,7 +30,7 @@ jobs:
       env:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        DOCKER_IMAGE_NAME: ananopaisdojavascript/user-teste:latest
+        DOCKER_IMAGE_NAME: ananopaisdojavascript/
       run: |
         docker build -t $DOCKER_IMAGE_NAME .
         echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin

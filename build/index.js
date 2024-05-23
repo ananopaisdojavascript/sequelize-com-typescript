@@ -27,7 +27,7 @@ app_data_source_1.default
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
-const port = 8000;
+const port = 8080;
 app.get("/users", (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const users = yield app_data_source_1.default.getRepository(user_entity_1.default).find();
     return res.json(users);

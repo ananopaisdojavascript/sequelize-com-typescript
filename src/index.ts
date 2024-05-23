@@ -16,7 +16,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const port = 8000;
+const port = 8080;
 
 app.get("/users", async (_req: Request, res: Response) => {
   const users = await dataSource.getRepository(User).find();
