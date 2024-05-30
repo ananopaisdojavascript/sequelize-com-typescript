@@ -2,11 +2,11 @@
   "name": "sequelize-com-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf build && tsc",
     "dev": "node ./build/server.js",
-    "start": "tsc && nodemon ./src/index.ts"
+    "start": "tsc && nodemon ./src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +17,8 @@
     "@types/node": "^20.12.7",
     "@types/nodemon": "^1.19.6",
     "@types/pg": "^8.11.5",
-    "reflect-metadata": "^0.2.2",
+    "rimraf": "^5.0.7",
     "ts-node": "^10.9.2",
-    "typeorm": "^0.3.20",
     "typescript": "^5.4.4"
   },
   "dependencies": {

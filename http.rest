@@ -1,10 +1,1 @@
-POST http://localhost:8000/users
-Content-Type: application/json
-
-{
-  "name": "Samuel Emanuel Nogueira",
-  "email": "samuel-nogueira91@innovatis.com.br",
-  "password": "Fp8TlTmza1",
-  "phone": "(81) 2758-3863",
-  "address": "Travessa Albacora, 379 - Recife-PE",
-}
+GET http://localhost:8080
